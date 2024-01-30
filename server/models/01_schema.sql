@@ -1,0 +1,11 @@
+DROP TABLE IF EXISTS notes cascade;
+
+__NOTE TABLE
+
+CREATE TABLE notes(
+
+id SERIAL PRIMARY KEY NOT NULL,
+note TEXT,
+done BOOLEAN DEFAULT FALSE,
+created_at TIMESTAMP
+)
